@@ -1,28 +1,74 @@
-# COSC335-TicTacToe
+# 🏩 TinyTowns
 
-# Deployment Instructions
-These steps will help you clone and run the project locally using Docker and Firebase.
+A strategy-based town-building game built using **React**, **Docker**, and **Firebase**. Inspired by the real Tiny Towns board game, this version brings it to life as a web app with modern tech.
 
-# Structure
-COSC335-TicTacToe/
-├── app/  React frontend (Vite)
-├── server/  Backend (if used separately)
-├── compose.yaml  Docker Compose setup
-├── Dockerfile  Frontend container build
-└── README.md
+---
 
-# Installs
-- Fork Project from GitHub
-- Docker Desktop App
-- Git
-- New Project in FireBase (Enable Authentication: Email/Password, Google, etc.)
+## 📦 Tech Stack
 
-# How to Run
+- ⚛️ React (Vite) — Frontend
+- 🔥 Firebase — Auth + Deployment
+- 🐳 Docker — Containerized environment
+- 🧪 Vitest — Unit Testing
 
-1. Go to Firebase -> Project Overview (in Newly Created Project) -> Project Settings -> Copy the firebaseConfig keys -> Paste into firebaseConfig.json
+---
 
-2. Open Docker and create a container for project file from root directory (COSC335-TicTacToe)
+## 🚀 Features
 
-3. Open up web browser and enter in local host (http://localhost:5173)
+- Place buildings and resources on a 4x4 grid
+- Automatically score patterns and enforce placement rules
+- Multiplayer-ready (coming soon)
+- Firebase Email/Password authentication
+- Dockerized setup for easy development and deployment
 
-4. Register and Login to play game
+---
+
+## 📸 Screenshots
+
+_Add images here later using:_
+```md
+![Game Board Screenshot](./screenshots/board.png)
+```
+
+---
+
+## 🔧 Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/bradfordcollins3/COSC335-TinyTownsProject.git
+cd COSC335-TinyTownsProject
+```
+
+### 2. Firebase Setup
+
+1. Go to [Firebase Console](https://console.firebase.google.com)
+2. Create a project → Enable **Email/Password** sign-in
+3. Get your `firebaseConfig` from Project Settings
+4. Paste it into `/app/src/firebaseConfig.json`
+
+### 3. Run Locally with Docker
+
+```bash
+docker-compose up --build
+```
+
+Then visit: [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🧪 Running Tests
+
+```bash
+npm run test
+```
+
+You can also run with coverage (via Docker):
+
+```bash
+docker exec -it tictactoe-vite sh
+npm run coverage
+```
+
+---
