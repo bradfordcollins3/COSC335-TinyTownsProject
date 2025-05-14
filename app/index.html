@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Tic Tac Toe</title>
-    <script type="module" src="./src/logic.js"></script>
-    <script type="module" src="./src/store.js"></script>
+    <title>Tiny Towns</title>
+    <script type="module" src="/src/logic.js"></script>
+    <script type="module" src="/src/store.js"></script>
 
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
@@ -17,7 +17,7 @@
           const app = firebase.initializeApp(config);
           const auth = firebase.auth();
           window.firebaseApp = app;
-          window.firebaseAuth = auth; 
+          window.firebaseAuth = auth;
 
           window.handleLogin = function () {
             const email = document.getElementById("email").value;
@@ -69,18 +69,14 @@
           auth.onAuthStateChanged((user) => {
             const loginForm = document.getElementById("login-form");
             const userInfo = document.getElementById("user-info");
-            const appDiv = document.getElementById("app");
-
             if (user) {
               displayUserInfo(user);
-              appDiv.style.display = "block";
               loginForm.style.display = "none";
               userInfo.style.display = "block";
             } else {
-              appDiv.style.display = "none";
               loginForm.style.display = "block";
               userInfo.style.display = "none";
-            } 
+            }
           });
         })
         .catch(err => {
@@ -115,8 +111,7 @@
       </div>
     </div>
 
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

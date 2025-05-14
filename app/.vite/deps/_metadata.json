@@ -1,0 +1,49 @@
+{
+  "hash": "a4d0a4c5",
+  "configHash": "16a1459d",
+  "lockfileHash": "f4fc936c",
+  "browserHash": "101ffde6",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "8b2a4c89",
+      "needsInterop": true
+    },
+    "zustand": {
+      "src": "../../node_modules/zustand/esm/index.js",
+      "file": "zustand.js",
+      "fileHash": "0c4c61fb",
+      "needsInterop": false
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "e982f065",
+      "needsInterop": true
+    },
+    "firebase/firestore": {
+      "src": "../../node_modules/firebase/firestore/dist/esm/index.esm.js",
+      "file": "firebase_firestore.js",
+      "fileHash": "8b696a2b",
+      "needsInterop": false
+    },
+    "firebase/app": {
+      "src": "../../node_modules/firebase/app/dist/esm/index.esm.js",
+      "file": "firebase_app.js",
+      "fileHash": "da39f8ee",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-KS2M7ZJI": {
+      "file": "chunk-KS2M7ZJI.js"
+    },
+    "chunk-6P6ZXDGX": {
+      "file": "chunk-6P6ZXDGX.js"
+    },
+    "chunk-5WRI5ZAA": {
+      "file": "chunk-5WRI5ZAA.js"
+    }
+  }
+}
